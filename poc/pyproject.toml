@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "poc"
+version = "0.1.0"
+description = ""
+authors = ["pintu4146 <pintoo.star4146@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+uvicorn = "^0.27.1"
+pyyaml = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
