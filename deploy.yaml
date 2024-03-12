@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aws-deployment-learning
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aws-deployment-learning
+  template:
+    metadata:
+      labels:
+        app: aws-deployment-learning
+    spec:
+      containers:
+      - name: aws-deployment-poc
+        image: pintu4146/aws-deployment-poc:v2
+        ports:
+        - containerPort: 8000

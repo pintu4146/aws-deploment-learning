@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aws-deployment-learning
+spec:
+  containers:
+  - name: aws-deployment-poc
+    image: pintu4146/aws-deployment-poc:v2
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 8000
